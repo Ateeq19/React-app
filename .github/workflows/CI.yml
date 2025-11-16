@@ -26,8 +26,8 @@ jobs:
       - name: Copy build folder to Azure VM
         uses: appleboy/scp-action@v0.1.7
         with:
-          host: ${{ 172.206.82.46 }}
-          username: ${{ azureuser }}
+          host: 172.206.82.46
+          username: azureuser
           key: ${{ secrets.AZURE_PRIVATE_KEY }}
           source: "build/*"
           target: "/home/azureuser/ateeq/react-app"
