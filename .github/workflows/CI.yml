@@ -30,4 +30,4 @@ jobs:
           username: ${{ azureuser }}
           key: ${{ secrets.AZURE_PRIVATE_KEY }}
           source: "build/*"
-          target: "/home/azureuser/my-react-app"
+          target: "/home/azureuser/ateeq/react-app"
